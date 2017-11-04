@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     colorDialog\dialog.cpp \
     colorDialog\coloritem.cpp \
     fileHandle\filehandle.cpp \
-    colorHandle/colorhandle.cpp
+    colorHandle/colorhandle.cpp \
+    colorHandle/picturehandle.cpp
 
 HEADERS  += digitmainwindow.h \
     widget.h \
@@ -37,7 +38,8 @@ HEADERS  += digitmainwindow.h \
     colorDialog\dialog.h \
     colorDialog\coloritem.h \
     fileHandle\filehandle.h \
-    colorHandle/colorhandle.h
+    colorHandle/colorhandle.h \
+    colorHandle/picturehandle.h
 
 FORMS    += digitmainwindow.ui \
     widget.ui \
