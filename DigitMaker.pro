@@ -21,13 +21,13 @@ SOURCES += main.cpp\
     widget.cpp \
     editdigitdialog.cpp \
     digitmananger.cpp \
-    digit.cpp \
     setsizedialog.cpp \
     colorDialog\dialog.cpp \
     colorDialog\coloritem.cpp \
     fileHandle\filehandle.cpp \
     colorHandle/colorhandle.cpp \
-    colorHandle/picturehandle.cpp
+    colorHandle/picturehandle.cpp \
+    digit.cpp
 
 HEADERS  += digitmainwindow.h \
     widget.h \
