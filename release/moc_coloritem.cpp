@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'coloritem.h'
 **
-** Created: Tue Oct 31 15:49:24 2017
+** Created: Fri Nov 3 22:11:22 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
