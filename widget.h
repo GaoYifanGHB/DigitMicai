@@ -14,7 +14,7 @@
 #include<QMouseEvent>
 #include"digitmananger.h"
 #include<QMessageBox>
-
+#include"colorHandle/picturehandle.h"
 
 
 namespace Ui {
