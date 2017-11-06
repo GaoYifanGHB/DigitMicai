@@ -135,3 +135,12 @@ void DigitMainWindow::on_actionOpen_triggered()
     }
 
 }
+
+void DigitMainWindow::on_action3dShow_triggered()
+{
+    MyGLWidget *w=new MyGLWidget;
+    w->resize(800,600);
+
+    w->setSize(this->l/200,this->w/200,this->h/200);
+    w->show();
+}

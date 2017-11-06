@@ -23,21 +23,35 @@ void PictureHandle::setDigitManager(DigitMananger dm)
 
 void PictureHandle::drawToPicture()
 {
-    //    -(w/2),-l/2,(w/2)-1,l/2-1
     Mat center(l*10,w*10,CV_8UC4);
     Mat up(h*10,w*10,CV_8UC4);
+    Mat down(h*10,w*10,CV_8UC4);
+    Mat left(l*10,h*10,CV_8UC4);
+    Mat right(l*10,h*10,CV_8UC4);
     drawBgColor(center);
     drawBgColor(up);
+    drawBgColor(down);
+    drawBgColor(left);
+    drawBgColor(right);
     for(int i=0;i<dm.digitList.size();i++){
         Digit d=dm.digitList[i];
         if(d.getLocationX()>=-(w/2)&&d.getLocationX()<=(w/2)-1&&d.getLocationY()>=-l/2&&d.getLocationY()<=l/2-1){
             drawOneDigit(d,-(w/2),-(l/2),center);
         }else if(d.getLocationX()>=-(w/2)&&d.getLocationX()<=(w/2)-1&&d.getLocationY()>=-l/2-h&&d.getLocationY()<=-l/2-1){
             drawOneDigit(d,-(w/2),-(l/2)-h,up);
+        }else if(d.getLocationX()>=-(w/2)&&d.getLocationX()<=(w/2)-1&&d.getLocationY()>=l/2&&d.getLocationY()<=l/2+h-1){
+            drawOneDigit(d,-(w/2),(l/2),down);
+        }else if(d.getLocationX()>=-(w/2)-h&&d.getLocationX()<=-(w/2)-1&&d.getLocationY()>=-l/2&&d.getLocationY()<=l/2-1){
+            drawOneDigit(d,-(w/2)-h,-(l/2),left);
+        }else if(d.getLocationX()>=(w/2)&&d.getLocationX()<=(w/2)+h-1&&d.getLocationY()>=-l/2&&d.getLocationY()<=l/2-1){
+            drawOneDigit(d,(w/2),-(l/2),right);
         }
     }
-    writeToFile(center,"center");
-    writeToFile(up,"up");
+    writeToFile(center,"side_c");
+    writeToFile(up,"side_u");
+    writeToFile(down,"side_d");
+    writeToFile(left,"side_l");
+    writeToFile(right,"side_r");
 }
 
 void PictureHandle::drawOneGrid(int x, int y, QColor color, Mat &mat)
@@ -86,7 +100,6 @@ void PictureHandle::writeToFile(Mat mat, string filename)
     vector<int> compression_params;
     compression_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
     compression_params.push_back(9);
-//    string file=".//side//"+filename+".png";
     string file=filename+".png";
     imwrite(file,mat,compression_params);
 }

@@ -14,6 +14,7 @@
 #include "setsizedialog.h"
 #include "colorDialog/dialog.h"
 #include "fileHandle/filehandle.h"
+#include "openGL3D/myglwidget.h"
 #include <string>
 
 namespace Ui {
@@ -56,6 +57,8 @@ private slots:
     //´ò¿ªÊýÂëÃÔ²Ê
     void on_actionOpen_triggered();
 
+
+    void on_action3dShow_triggered();
 
 private:
     Ui::DigitMainWindow *ui;

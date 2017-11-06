@@ -11,10 +11,12 @@ INPUT(
 ./release\colorhandle.o
 ./release\picturehandle.o
 ./release\digit.o
+./release\myglwidget.o
 ./release\moc_digitmainwindow.o
 ./release\moc_widget.o
 ./release\moc_editdigitdialog.o
 ./release\moc_setsizedialog.o
 ./release\moc_dialog.o
 ./release\moc_coloritem.o
+./release\moc_myglwidget.o
 );

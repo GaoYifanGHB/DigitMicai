@@ -36,8 +36,15 @@
      <string>编辑</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menu3D">
+    <property name="title">
+     <string>3D</string>
+    </property>
+    <addaction name="action3dShow"/>
+   </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
+   <addaction name="menu3D"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -182,6 +189,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action3dShow">
+   <property name="text">
+    <string>3d效果预览</string>
    </property>
   </action>
  </widget>

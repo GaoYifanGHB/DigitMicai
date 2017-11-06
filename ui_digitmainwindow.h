@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digitmainwindow.ui'
 **
-** Created: Wed Nov 1 16:29:28 2017
+** Created: Mon Nov 6 16:38:45 2017
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -35,10 +35,12 @@ public:
     QAction *actionNew;
     QAction *actionOpen;
     QAction *actionSave;
+    QAction *action3dShow;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menu;
     QMenu *menu_2;
+    QMenu *menu3D;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
     QDockWidget *toolWidget;
@@ -72,6 +74,8 @@ public:
         actionOpen->setObjectName(QString::fromUtf8("actionOpen"));
         actionSave = new QAction(DigitMainWindow);
         actionSave->setObjectName(QString::fromUtf8("actionSave"));
+        action3dShow = new QAction(DigitMainWindow);
+        action3dShow->setObjectName(QString::fromUtf8("action3dShow"));
         centralWidget = new QWidget(DigitMainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         DigitMainWindow->setCentralWidget(centralWidget);
@@ -82,6 +86,8 @@ public:
         menu->setObjectName(QString::fromUtf8("menu"));
         menu_2 = new QMenu(menuBar);
         menu_2->setObjectName(QString::fromUtf8("menu_2"));
+        menu3D = new QMenu(menuBar);
+        menu3D->setObjectName(QString::fromUtf8("menu3D"));
         DigitMainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(DigitMainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -178,9 +184,11 @@ public:
 
         menuBar->addAction(menu->menuAction());
         menuBar->addAction(menu_2->menuAction());
+        menuBar->addAction(menu3D->menuAction());
         menu->addAction(actionNew);
         menu->addAction(actionOpen);
         menu->addAction(actionSave);
+        menu3D->addAction(action3dShow);
 
         retranslateUi(DigitMainWindow);
 
@@ -196,8 +204,10 @@ public:
         actionOpen->setShortcut(QApplication::translate("DigitMainWindow", "Ctrl+O", 0, QApplication::UnicodeUTF8));
         actionSave->setText(QApplication::translate("DigitMainWindow", "\344\277\235\345\255\230(&S)", 0, QApplication::UnicodeUTF8));
         actionSave->setShortcut(QApplication::translate("DigitMainWindow", "Ctrl+S", 0, QApplication::UnicodeUTF8));
+        action3dShow->setText(QApplication::translate("DigitMainWindow", "3d\346\225\210\346\236\234\351\242\204\350\247\210", 0, QApplication::UnicodeUTF8));
         menu->setTitle(QApplication::translate("DigitMainWindow", "\346\226\207\344\273\266", 0, QApplication::UnicodeUTF8));
         menu_2->setTitle(QApplication::translate("DigitMainWindow", "\347\274\226\350\276\221", 0, QApplication::UnicodeUTF8));
+        menu3D->setTitle(QApplication::translate("DigitMainWindow", "3D", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         toolWidget->setToolTip(QApplication::translate("DigitMainWindow", "\345\267\245\345\205\267\346\240\217", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP

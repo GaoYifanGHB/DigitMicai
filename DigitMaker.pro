@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT += opengl
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DigitMaker
@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     fileHandle\filehandle.cpp \
     colorHandle/colorhandle.cpp \
     colorHandle/picturehandle.cpp \
-    digit.cpp
+    digit.cpp \
+    openGL3D/myglwidget.cpp
 
 HEADERS  += digitmainwindow.h \
     widget.h \
@@ -39,7 +40,8 @@ HEADERS  += digitmainwindow.h \
     colorDialog\coloritem.h \
     fileHandle\filehandle.h \
     colorHandle/colorhandle.h \
-    colorHandle/picturehandle.h
+    colorHandle/picturehandle.h \
+    openGL3D/myglwidget.h
 
 FORMS    += digitmainwindow.ui \
     widget.ui \
