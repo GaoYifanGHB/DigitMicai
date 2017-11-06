@@ -45,7 +45,6 @@ private slots:
 
     void on_radioButton_3_released();
 
-
     void on_radioButton_released();
 
     void on_radioButton_4_released();
