@@ -15,6 +15,7 @@
 #include "colorDialog/dialog.h"
 #include "fileHandle/filehandle.h"
 #include "openGL3D/myglwidget.h"
+#include "colorHandle/picturehandle.h"
 #include <string>
 
 namespace Ui {
@@ -56,7 +57,6 @@ private slots:
     void on_actionSave_triggered();
     //´ò¿ªÊýÂëÃÔ²Ê
     void on_actionOpen_triggered();
-
 
     void on_action3dShow_triggered();
 

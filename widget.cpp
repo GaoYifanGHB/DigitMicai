@@ -33,12 +33,15 @@ void Widget::createDigitMap()
     dm.setColorRatio(rls);
     //ÎªÊýÂëÃÔ²Ê¿éÍ¿É«
     dm.drawAllDigltColor();
+}
+
+void Widget::createPicture()
+{
     PictureHandle* pictureHandle=new PictureHandle;
     pictureHandle->setBgColor(cls[cls.size()-1]);
     pictureHandle->setSize(l,w,h);
     pictureHandle->setDigitManager(dm);
     pictureHandle->drawToPicture();
-
 }
 
 void Widget::getDigit(Digit d,int n)

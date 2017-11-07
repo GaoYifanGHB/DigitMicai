@@ -57,6 +57,8 @@ public:
     void setHandleState(int handleState);
     //根据已经设置的条件创建数码迷彩
     void createDigitMap();
+    //生成五视图
+    void createPicture();
 public slots:
     void getDigit(Digit,int);
 protected:

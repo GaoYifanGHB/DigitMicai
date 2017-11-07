@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'digitmainwindow.h'
 **
-** Created: Mon Nov 6 16:53:13 2017
+** Created: Tue Nov 7 16:39:52 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!

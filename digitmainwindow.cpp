@@ -135,12 +135,11 @@ void DigitMainWindow::on_actionOpen_triggered()
     }
 
 }
-
 void DigitMainWindow::on_action3dShow_triggered()
 {
+    childWidget->createPicture();
     MyGLWidget *w=new MyGLWidget;
-    w->resize(800,600);
-
+    w->resize(1000,800);
     w->setSize(this->l/200,this->w/200,this->h/200);
     w->show();
 }

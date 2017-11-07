@@ -91,6 +91,7 @@ void MyGLWidget::paintGL()
     glTexCoord2f(1.0,0.0);glVertex3f(w/2,-h/2,-l/2);
     glTexCoord2f(1.0,1.0);glVertex3f(w/2,-h/2,l/2);
     glEnd();
+
     //×óÃæ
     glBindTexture(GL_TEXTURE_2D,side_left);
     glBegin(GL_QUADS);
