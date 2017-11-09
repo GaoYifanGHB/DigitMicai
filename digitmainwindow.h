@@ -17,6 +17,7 @@
 #include "openGL3D/myglwidget.h"
 #include "colorHandle/picturehandle.h"
 #include <string>
+#include <QProcess>
 
 namespace Ui {
 class DigitMainWindow;
@@ -59,6 +60,8 @@ private slots:
     void on_actionOpen_triggered();
 
     void on_action3dShow_triggered();
+
+    void on_actionKeyshot_triggered();
 
 private:
     Ui::DigitMainWindow *ui;

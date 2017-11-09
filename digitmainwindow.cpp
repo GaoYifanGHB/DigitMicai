@@ -143,3 +143,9 @@ void DigitMainWindow::on_action3dShow_triggered()
     w->setSize(this->l/200,this->w/200,this->h/200);
     w->show();
 }
+
+void DigitMainWindow::on_actionKeyshot_triggered()
+{
+    childWidget->createPicture();
+    system("keyshot6.bat");
+}

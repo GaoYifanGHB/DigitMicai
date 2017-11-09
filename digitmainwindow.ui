@@ -41,6 +41,7 @@
      <string>3D</string>
     </property>
     <addaction name="action3dShow"/>
+    <addaction name="actionKeyshot"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -194,6 +195,11 @@
   <action name="action3dShow">
    <property name="text">
     <string>3d效果预览</string>
+   </property>
+  </action>
+  <action name="actionKeyshot">
+   <property name="text">
+    <string>keyshot</string>
    </property>
   </action>
  </widget>

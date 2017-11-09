@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'digitmainwindow.h'
 **
-** Created: Tue Nov 7 16:39:52 2017
+** Created: Tue Nov 7 21:48:01 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_DigitMainWindow[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -39,6 +39,7 @@ static const uint qt_meta_data_DigitMainWindow[] = {
      169,   16,   16,   16, 0x08,
      195,   16,   16,   16, 0x08,
      221,   16,   16,   16, 0x08,
+     249,   16,   16,   16, 0x08,
 
        0        // eod
 };
@@ -52,6 +53,7 @@ static const char qt_meta_stringdata_DigitMainWindow[] = {
     "on_actionSave_triggered()\0"
     "on_actionOpen_triggered()\0"
     "on_action3dShow_triggered()\0"
+    "on_actionKeyshot_triggered()\0"
 };
 
 const QMetaObject DigitMainWindow::staticMetaObject = {
@@ -91,9 +93,10 @@ int DigitMainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 5: on_actionSave_triggered(); break;
         case 6: on_actionOpen_triggered(); break;
         case 7: on_action3dShow_triggered(); break;
+        case 8: on_actionKeyshot_triggered(); break;
         default: ;
         }
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

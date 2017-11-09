@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'digitmainwindow.ui'
 **
-** Created: Mon Nov 6 16:38:45 2017
+** Created: Tue Nov 7 21:28:23 2017
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -36,6 +36,7 @@ public:
     QAction *actionOpen;
     QAction *actionSave;
     QAction *action3dShow;
+    QAction *actionKeyshot;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menu;
@@ -76,6 +77,8 @@ public:
         actionSave->setObjectName(QString::fromUtf8("actionSave"));
         action3dShow = new QAction(DigitMainWindow);
         action3dShow->setObjectName(QString::fromUtf8("action3dShow"));
+        actionKeyshot = new QAction(DigitMainWindow);
+        actionKeyshot->setObjectName(QString::fromUtf8("actionKeyshot"));
         centralWidget = new QWidget(DigitMainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         DigitMainWindow->setCentralWidget(centralWidget);
@@ -189,6 +192,7 @@ public:
         menu->addAction(actionOpen);
         menu->addAction(actionSave);
         menu3D->addAction(action3dShow);
+        menu3D->addAction(actionKeyshot);
 
         retranslateUi(DigitMainWindow);
 
@@ -205,6 +209,7 @@ public:
         actionSave->setText(QApplication::translate("DigitMainWindow", "\344\277\235\345\255\230(&S)", 0, QApplication::UnicodeUTF8));
         actionSave->setShortcut(QApplication::translate("DigitMainWindow", "Ctrl+S", 0, QApplication::UnicodeUTF8));
         action3dShow->setText(QApplication::translate("DigitMainWindow", "3d\346\225\210\346\236\234\351\242\204\350\247\210", 0, QApplication::UnicodeUTF8));
+        actionKeyshot->setText(QApplication::translate("DigitMainWindow", "keyshot", 0, QApplication::UnicodeUTF8));
         menu->setTitle(QApplication::translate("DigitMainWindow", "\346\226\207\344\273\266", 0, QApplication::UnicodeUTF8));
         menu_2->setTitle(QApplication::translate("DigitMainWindow", "\347\274\226\350\276\221", 0, QApplication::UnicodeUTF8));
         menu3D->setTitle(QApplication::translate("DigitMainWindow", "3D", 0, QApplication::UnicodeUTF8));
